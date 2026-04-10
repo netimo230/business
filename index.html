@@ -2273,6 +2273,79 @@ renderWallet();
 renderPomo();
 renderDistractionTags();
 
+
+// Extra handlers
+window.pomoUpdateSettings = typeof pomoUpdateSettings !== "undefined" ? pomoUpdateSettings : window.pomoUpdateSettings;
+window.renderCrm = typeof renderCrm !== "undefined" ? renderCrm : window.renderCrm;
+
+// ══ Expose functions to window (required for type="module") ══
+window.addDistraction = typeof addDistraction !== "undefined" ? addDistraction : window.addDistraction;
+window.addEvent = typeof addEvent !== "undefined" ? addEvent : window.addEvent;
+window.addIaProjects = typeof addIaProjects !== "undefined" ? addIaProjects : window.addIaProjects;
+window.addJournalEntry = typeof addJournalEntry !== "undefined" ? addJournalEntry : window.addJournalEntry;
+window.addNote = typeof addNote !== "undefined" ? addNote : window.addNote;
+window.addPomoNote = typeof addPomoNote !== "undefined" ? addPomoNote : window.addPomoNote;
+window.addScreenTime = typeof addScreenTime !== "undefined" ? addScreenTime : window.addScreenTime;
+window.addTask = typeof addTask !== "undefined" ? addTask : window.addTask;
+window.addTx = typeof addTx !== "undefined" ? addTx : window.addTx;
+window.calChangeMonth = typeof calChangeMonth !== "undefined" ? calChangeMonth : window.calChangeMonth;
+window.calDayClick = typeof calDayClick !== "undefined" ? calDayClick : window.calDayClick;
+window.calGoToday = typeof calGoToday !== "undefined" ? calGoToday : window.calGoToday;
+window.changeDay = typeof changeDay !== "undefined" ? changeDay : window.changeDay;
+window.closeAutocomplete = typeof closeAutocomplete !== "undefined" ? closeAutocomplete : window.closeAutocomplete;
+window.closeBreakPopup = typeof closeBreakPopup !== "undefined" ? closeBreakPopup : window.closeBreakPopup;
+window.closeCrmModal = typeof closeCrmModal !== "undefined" ? closeCrmModal : window.closeCrmModal;
+window.closeJournalViewModal = typeof closeJournalViewModal !== "undefined" ? closeJournalViewModal : window.closeJournalViewModal;
+window.closeObjModal = typeof closeObjModal !== "undefined" ? closeObjModal : window.closeObjModal;
+window.closeProjDetail = typeof closeProjDetail !== "undefined" ? closeProjDetail : window.closeProjDetail;
+window.closeProjModal = typeof closeProjModal !== "undefined" ? closeProjModal : window.closeProjModal;
+window.closeShareModal = typeof closeShareModal !== "undefined" ? closeShareModal : window.closeShareModal;
+window.copyShareText = typeof copyShareText !== "undefined" ? copyShareText : window.copyShareText;
+window.createContact = typeof createContact !== "undefined" ? createContact : window.createContact;
+window.createObj = typeof createObj !== "undefined" ? createObj : window.createObj;
+window.createProj = typeof createProj !== "undefined" ? createProj : window.createProj;
+window.delContact = typeof delContact !== "undefined" ? delContact : window.delContact;
+window.delEvent = typeof delEvent !== "undefined" ? delEvent : window.delEvent;
+window.delFile = typeof delFile !== "undefined" ? delFile : window.delFile;
+window.delJournal = typeof delJournal !== "undefined" ? delJournal : window.delJournal;
+window.delNote = typeof delNote !== "undefined" ? delNote : window.delNote;
+window.delObj = typeof delObj !== "undefined" ? delObj : window.delObj;
+window.delPomoNote = typeof delPomoNote !== "undefined" ? delPomoNote : window.delPomoNote;
+window.delScreenTime = typeof delScreenTime !== "undefined" ? delScreenTime : window.delScreenTime;
+window.delTask = typeof delTask !== "undefined" ? delTask : window.delTask;
+window.delTx = typeof delTx !== "undefined" ? delTx : window.delTx;
+window.deleteCurProj = typeof deleteCurProj !== "undefined" ? deleteCurProj : window.deleteCurProj;
+window.enterFocusMode = typeof enterFocusMode !== "undefined" ? enterFocusMode : window.enterFocusMode;
+window.exitFocusMode = typeof exitFocusMode !== "undefined" ? exitFocusMode : window.exitFocusMode;
+window.filterProj = typeof filterProj !== "undefined" ? filterProj : window.filterProj;
+window.filterTx = typeof filterTx !== "undefined" ? filterTx : window.filterTx;
+window.handleFiles = typeof handleFiles !== "undefined" ? handleFiles : window.handleFiles;
+window.iaBrainstorm = typeof iaBrainstorm !== "undefined" ? iaBrainstorm : window.iaBrainstorm;
+window.loadPomoFile = typeof loadPomoFile !== "undefined" ? loadPomoFile : window.loadPomoFile;
+window.openCrmModal = typeof openCrmModal !== "undefined" ? openCrmModal : window.openCrmModal;
+window.openJournalFromCal = typeof openJournalFromCal !== "undefined" ? openJournalFromCal : window.openJournalFromCal;
+window.openObjModal = typeof openObjModal !== "undefined" ? openObjModal : window.openObjModal;
+window.openProj = typeof openProj !== "undefined" ? openProj : window.openProj;
+window.openProjModal = typeof openProjModal !== "undefined" ? openProjModal : window.openProjModal;
+window.openShareModal = typeof openShareModal !== "undefined" ? openShareModal : window.openShareModal;
+window.pickApp = typeof pickApp !== "undefined" ? pickApp : window.pickApp;
+window.pomoPrev = typeof pomoPrev !== "undefined" ? pomoPrev : window.pomoPrev;
+window.pomoReset = typeof pomoReset !== "undefined" ? pomoReset : window.pomoReset;
+window.pomoToggle = typeof pomoToggle !== "undefined" ? pomoToggle : window.pomoToggle;
+window.removeDistraction = typeof removeDistraction !== "undefined" ? removeDistraction : window.removeDistraction;
+window.saveFocusNote = typeof saveFocusNote !== "undefined" ? saveFocusNote : window.saveFocusNote;
+window.saveMainObj = typeof saveMainObj !== "undefined" ? saveMainObj : window.saveMainObj;
+window.selColor = typeof selColor !== "undefined" ? selColor : window.selColor;
+window.selDetStatus = typeof selDetStatus !== "undefined" ? selDetStatus : window.selDetStatus;
+window.selMood = typeof selMood !== "undefined" ? selMood : window.selMood;
+window.selStatus = typeof selStatus !== "undefined" ? selStatus : window.selStatus;
+window.setBudget = typeof setBudget !== "undefined" ? setBudget : window.setBudget;
+window.setSign = typeof setSign !== "undefined" ? setSign : window.setSign;
+window.stimeAutocomplete = typeof stimeAutocomplete !== "undefined" ? stimeAutocomplete : window.stimeAutocomplete;
+window.switchWallet = typeof switchWallet !== "undefined" ? switchWallet : window.switchWallet;
+window.toggleTask = typeof toggleTask !== "undefined" ? toggleTask : window.toggleTask;
+window.updateObj = typeof updateObj !== "undefined" ? updateObj : window.updateObj;
+
 </script>
 </body>
 </html>
